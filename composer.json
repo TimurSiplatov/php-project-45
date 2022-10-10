@@ -1,0 +1,15 @@
+{
+    "name": "hexlet/code",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Timur Siplatov",
+            "email": "jjj_jjj_18@mail.ru"
+        }
+    ],
+    "require": {}
+}
