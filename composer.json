@@ -1,5 +1,11 @@
 {
     "name": "hexlet/code",
+	"description": "three games",
+	"require": {
+		"php": ">=8.0",
+		"another-vendor/package": "1.*"
+	},
+	"license": "MIT",
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -11,5 +17,7 @@
             "email": "jjj_jjj_18@mail.ru"
         }
     ],
-    "require": {}
+	"bin": [
+	"bin/brain-games"
+	]
 }
