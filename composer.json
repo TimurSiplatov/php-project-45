@@ -3,10 +3,11 @@
 	"description": "three games",
 	"require": {
 		"php": ">=8.0",
-		"another-vendor/package": "1.*"
+        "wp-cli/php-cli-tools": "^0.11.15"
 	},
 	"license": "MIT",
     "autoload": {
+	"files": ["src/Cli.php"],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
