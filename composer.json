@@ -10,7 +10,7 @@
 	},
 	"license": "MIT",
     "autoload": {
-	"files": ["src/Cli.php"],
+	"files": ["src/Cli.php", "src/BrainEven.php"],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
@@ -22,6 +22,7 @@
         }
     ],
 	"bin": [
-	"bin/brain-games"
+	"bin/brain-games",
+    "bin/brain-even"
 	]
 }
