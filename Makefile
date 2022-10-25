@@ -1,12 +1,14 @@
 install: # зависимости
 	composer install
-brain-games: # открыть игру
+brain-games: # открыть приветствие
 	./bin/brain-games
-validate: # composer validate
+validate: 
 	composer validate
-lint:
+lint: # запуск линтера
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
-brain-even:
+brain-even: # игра четное нечетное
 	./bin/brain-even
-brain-calc:
+brain-calc: # игра калькулятор
 	./bin/brain-calc
+brain-gcd: # игра наибольший общий делитель
+	./bin/brain-gcd
