@@ -12,3 +12,5 @@ brain-calc: # игра калькулятор
 	./bin/brain-calc
 brain-gcd: # игра наибольший общий делитель
 	./bin/brain-gcd
+brain-progression: # игра арифметическая прогрессия
+	./bin/brain-progression
