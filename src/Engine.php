@@ -59,7 +59,7 @@ function Calc()
 function gcd()
 {
     $name = welcome();
-    line('Find the greatest common divisior of given numbers.');
+    line('Find the greatest common divisor of given numbers.');
     for ($i = 0; $i < 3; $i++) {
         $firstNumber = rand(0, 100);
         $secondNumber = rand(0, 100);
