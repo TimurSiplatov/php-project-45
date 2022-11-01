@@ -3,11 +3,11 @@
 ### Maintainability:
 [![Maintainability](https://api.codeclimate.com/v1/badges/78907c8e6fd3a1519fb9/maintainability)](https://codeclimate.com/github/TimurSiplatov/php-project-45/maintainability)
 ### Asciinema brain-even:
-https://asciinema.org/a/a34eMFe72548ULvUTQY7uB6sF
+https://asciinema.org/a/4gYy7Hb53xz7Pbborfg2aGbfk
 ### Asciinema brain-calc:
-https://asciinema.org/a/KDkjDmeC22RXCEVMNLpxub6n8
+https://asciinema.org/a/S1aHs9b7U6lkCflUSCg1Nq861
 ### Asciinema brain-gcd:
-https://asciinema.org/a/ak5f9g8mApM67vakA5N0RI1hr
+https://asciinema.org/a/rL086VTLHHr7li5hAKcuFDtnT
 ### Asciinema brain-progression:
 https://asciinema.org/a/fG4L4VcN4XrHeVy8Wko5lvrEH
 ### Asciinema brain-prime:
