@@ -114,8 +114,6 @@ function progression()
 function isPrime()
 {
     $name = welcome();
-
-    line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 0; $i < 3; $i++) {
         $number = rand(0, 101);
         $correctAnswer = "yes";
@@ -125,6 +123,7 @@ function isPrime()
                 break;
             }
         }
+        line('Answer "yes" if given number is prime. Otherwise answer "no".');
         line("Question: {$number}");
         $answer = prompt("Your answer");
         if ($answer === $correctAnswer) {
