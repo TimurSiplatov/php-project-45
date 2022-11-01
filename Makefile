@@ -14,3 +14,5 @@ brain-gcd: # игра наибольший общий делитель
 	./bin/brain-gcd
 brain-progression: # игра арифметическая прогрессия
 	./bin/brain-progression
+brain-prime: # игра простое ли число?
+	./bin/brain-prime

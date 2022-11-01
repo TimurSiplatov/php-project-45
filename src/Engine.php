@@ -110,3 +110,29 @@ function progression()
     }
     line("Congratulations, {$name}!");
 }
+
+function isPrime()
+{
+    $name = welcome();
+
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
+    for ($i = 0; $i < 3; $i++) {
+        $number = rand(0, 101);
+        $correctAnswer = "yes";
+        for ($j = 2; $j < $number; $j++) {
+            if ($number % $j === 0) {
+                $correctAnswer = "no";
+                break;
+            }
+        }
+        line("Question: {$number}");
+        $answer = prompt("Your answer");
+        if ($answer === $correctAnswer) {
+            line('Correct!');
+        } else {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+            return line("Let's try again, {$name}!");
+        }
+    }
+    line("Congratulations, {$name}!");
+}
