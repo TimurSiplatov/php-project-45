@@ -25,7 +25,7 @@ function isEven()
     line("Congratulations, {$name}!");
 }
 
-function Calc()
+function calc()
 {
     $name = welcome();
     $operations = ["+", "-", "*"];
@@ -115,7 +115,7 @@ function isPrime()
 {
     $name = welcome();
     for ($i = 0; $i < 3; $i++) {
-        $number = rand(0, 101);
+        $number = rand(1, 101);
         $correctAnswer = "yes";
         for ($j = 2; $j < $number; $j++) {
             if ($number % $j === 0) {
