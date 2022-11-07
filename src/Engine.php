@@ -6,7 +6,7 @@ use function BrainGames\Cli\welcome;
 use function cli\line;
 use function cli\prompt;
 
-function isEven()
+function startEven()
 {
     $name = welcome();
     line('Answer "yes" if the number is even, otherwise answer "no".');
@@ -25,7 +25,7 @@ function isEven()
     line("Congratulations, {$name}!");
 }
 
-function calc()
+function startCalc()
 {
     $name = welcome();
     $operations = ["+", "-", "*"];
@@ -56,7 +56,7 @@ function calc()
     line("Congratulations, {$name}!");
 }
 
-function gcd()
+function startGcd()
 {
     $name = welcome();
     line('Find the greatest common divisor of given numbers.');
@@ -82,7 +82,7 @@ function gcd()
     line("Congratulations, {$name}!");
 }
 
-function progression()
+function startProgression()
 {
     $name = welcome();
     line('What number is missing in the progression?');
@@ -111,7 +111,7 @@ function progression()
     line("Congratulations, {$name}!");
 }
 
-function isPrime()
+function startPrime()
 {
     $name = welcome();
     for ($i = 0; $i < 3; $i++) {
