@@ -8,5 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'be01b9b16925dcb22165c40b46681ac6' => $vendorDir . '/wp-cli/php-cli-tools/lib/cli/cli.php',
     '4829b2fddb6a054e51fbedd69dcbc605' => $baseDir . '/src/Cli.php',
-    '153b3f9a6ef915fed43292a3761aa01c' => $baseDir . '/src/Engine.php',
+    '596b366cd9b706014f2f9c9fabf5efc9' => $baseDir . '/src/brain-calc.php',
+    '907d366b2d64097c6921abb60c4c73c4' => $baseDir . '/src/brain-even.php',
+    '862387e0d0214d86193728ca8906b308' => $baseDir . '/src/brain-gcd.php',
+    'e6dfee624ed94e63dc5d94fd23bd4a3a' => $baseDir . '/src/brain-prime.php',
+    '1251d9376d672a9a9efdcb304eb22bb0' => $baseDir . '/src/brain-progression.php',
 );
