@@ -8,7 +8,7 @@ use function cli\prompt;
 
 const PLAY_TIMES = 3;
 
-function makeGame($gameDescriprion, $gameLogic)
+function makeGame(string $gameDescriprion, callable $gameLogic)
 {
     $name = welcome();
     line($gameDescriprion);
