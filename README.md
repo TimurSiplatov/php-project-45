@@ -2,6 +2,14 @@
 [![Actions Status](https://github.com/TimurSiplatov/php-project-45/workflows/hexlet-check/badge.svg)](https://github.com/TimurSiplatov/php-project-45/actions)
 ### Maintainability:
 [![Maintainability](https://api.codeclimate.com/v1/badges/78907c8e6fd3a1519fb9/maintainability)](https://codeclimate.com/github/TimurSiplatov/php-project-45/maintainability)
+### Hello, World!
+
+This is my first project on "Hexlet". There are 5 games in this project. To start playing do the following:
+
+- Clone a repository
+
+- Install dependencies "make install"
+
 ### Asciinema brain-even:
 [![asciicast](https://asciinema.org/a/4gYy7Hb53xz7Pbborfg2aGbfk.svg)](https://asciinema.org/a/4gYy7Hb53xz7Pbborfg2aGbfk)
 ### Asciinema brain-calc:
