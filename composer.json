@@ -10,10 +10,7 @@
 	},
 	"license": "MIT",
     "autoload": {
-	"files": ["src/Cli.php", "src/brain-calc.php", "src/brain-even.php", "src/brain-gcd.php", "src/brain-prime.php", "src/brain-progression.php"],
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
+	"files": ["src/Cli.php", "src/Games/BrainCalc.php", "src/Games/BrainEven.php", "src/Games/BrainGcd.php", "src/Games/BrainPrime.php", "src/Games/BrainProgression.php", "src/Engine.php"]
     },
     "authors": [
         {
