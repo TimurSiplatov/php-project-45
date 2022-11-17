@@ -2,29 +2,36 @@
 
 namespace BrainGames\Games\BrainCalc;
 
-use function BrainGames\Engine\makeGame;
+use function BrainGames\Engine\runGame;
+
+const GAME_DESCRIPTION = 'What is the result of the expression?';
+
+function calculate(string $operator, int $firstNumber, int $secondNumber): string
+{
+    switch ($operator) {
+        case "+":
+            $correctAnswer = $firstNumber + $secondNumber;
+            break;
+        case "-":
+            $correctAnswer = $firstNumber - $secondNumber;
+            break;
+        case "*":
+            $correctAnswer = $firstNumber * $secondNumber;
+            break;
+    }
+    return (string) $correctAnswer;
+}
 
 function startCalc()
 {
-    $gameDescription = 'What is the result of the expression?';
     $gameLogic = function () {
         $operations = ["+", "-", "*"];
         $firstNumber = rand(0, 20);
         $secondNumber = rand(0, 20);
-        $randomOperation = array_rand($operations);
-        if ($randomOperation === 0) {
-            $correctAnswer = $firstNumber + $secondNumber;
-            $operator = "+";
-        } elseif ($randomOperation === 1) {
-            $correctAnswer = $firstNumber - $secondNumber;
-            $operator = "-";
-        } else {
-            $correctAnswer = $firstNumber * $secondNumber;
-            $operator = "*";
-        }
+        $operator = $operations[array_rand($operations)];
         $questionForPlayer = "{$firstNumber} {$operator} {$secondNumber}";
-        $correctAnswer = (string) $correctAnswer;
+        $correctAnswer = calculate($operator, $firstNumber, $secondNumber);
         return [$questionForPlayer, $correctAnswer];
     };
-    makeGame($gameDescription, $gameLogic);
+    runGame(GAME_DESCRIPTION, $gameLogic);
 }

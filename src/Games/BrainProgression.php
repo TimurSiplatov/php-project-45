@@ -2,11 +2,12 @@
 
 namespace BrainGames\Games\BrainProgression;
 
-use function BrainGames\Engine\makeGame;
+use function BrainGames\Engine\runGame;
+
+const GAME_DESCRIPTION = 'What number is missing in the progression?';
 
 function startProgression()
 {
-    $gameDescriprion = 'What number is missing in the progression?';
     $gameLogic = function () {
         $progressionStep = rand(1, 10);
         $firstNumber = rand(0, 50);
@@ -23,5 +24,5 @@ function startProgression()
         $questionForPlayer = implode(" ", $progression);
         return [$questionForPlayer, $correctAnswer];
     };
-    makeGame($gameDescriprion, $gameLogic);
+    runGame(GAME_DESCRIPTION, $gameLogic);
 }

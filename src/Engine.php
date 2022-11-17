@@ -2,17 +2,18 @@
 
 namespace BrainGames\Engine;
 
-use function BrainGames\Cli\welcome;
 use function cli\line;
 use function cli\prompt;
 
-const PLAY_TIMES = 3;
+const ROUNDS_COUNT = 3;
 
-function makeGame(string $gameDescriprion, callable $gameLogic)
+function runGame(string $gameDescriprion, callable $gameLogic)
 {
-    $name = welcome();
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line($gameDescriprion);
-    for ($i = 0; $i < PLAY_TIMES; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         [$questionForPlayer, $correctAnswer] = $gameLogic();
         line("Question: {$questionForPlayer}");
         $playerAnswer = prompt('Your answer');
