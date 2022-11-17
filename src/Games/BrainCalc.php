@@ -32,6 +32,8 @@ function calculate(string $operator, int $firstNumber, int $secondNumber): strin
         case "*":
             $correctAnswer = $firstNumber * $secondNumber;
             break;
+        default:
+            $correctAnswer = null;
     }
     return (string) $correctAnswer;
 }
