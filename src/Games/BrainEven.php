@@ -8,14 +8,14 @@ const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "
 
 function isEven(int $number): bool
 {
-    return ($number % 2 === 0);
+    return $number % 2 === 0;
 }
 
 function startEven()
 {
     $gameLogic = function () {
         $number = rand(0, 100);
-        isEven($number) ? $correctAnswer = "yes" : $correctAnswer = "no";
+        $correctAnswer = isEven($number) ? "yes" : "no";
         return [$number, $correctAnswer];
     };
     runGame(GAME_DESCRIPTION, $gameLogic);
