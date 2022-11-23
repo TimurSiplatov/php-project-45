@@ -14,13 +14,13 @@ function startCalc()
         $secondNumber = rand(0, 20);
         $operator = $operations[array_rand($operations)];
         $questionForPlayer = "{$firstNumber} {$operator} {$secondNumber}";
-        $correctAnswer = calculate($operator, $firstNumber, $secondNumber);
+        $correctAnswer = (string) calculate($operator, $firstNumber, $secondNumber);
         return [$questionForPlayer, $correctAnswer];
     };
     runGame(GAME_DESCRIPTION, $gameLogic);
 }
 
-function calculate(string $operator, int $firstNumber, int $secondNumber): string
+function calculate(string $operator, int $firstNumber, int $secondNumber): int
 {
     switch ($operator) {
         case "+":
@@ -35,5 +35,5 @@ function calculate(string $operator, int $firstNumber, int $secondNumber): strin
         default:
             $correctAnswer = null;
     }
-    return (string) $correctAnswer;
+    return $correctAnswer;
 }
